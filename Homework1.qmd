@@ -1,0 +1,35 @@
+---
+title: "Data Sciencing"
+format: html
+editor: visual
+---
+
+## Questions for Data Science
+
+-   What do you think being a data scientist is about?
+
+While there are many different interpretations of what a data scientist is, I would say it can be any individual who is involved with the collection, cleaning, formatting, analysis, explanation, visualization, or modeling of data.
+
+-   What differences/similarities do you see between data scientists and statisticians?
+
+In my mind, both data scientists and statisticians are seeking to utilize data to provide an actionable recommendation for a particular problem or question. Generally speaking, the difference seems to be that statisticians tend to approach a problem from a more formal/theoretical standpoint, assigning confidence intervals and p-values as appropriate, and data scientists approach the problem more pragmatically/programmatically, identifying ways in which a set of inputs can generate a desired output, rather than necessarily considering a stochastic model.
+
+-   How do you view yourself in relation to these two areas?
+
+My background is definitely that of a statistician, as I have much more familiarity with the mathematical aspect of analyzing data than I do with the programming side, but I certainly see the value in gaining and implementing both skill sets to address a problem.
+
+## Density Function Example
+
+```{r}
+y <- density(iris$Sepal.Length)
+class(y)
+typeof(y)
+str(y)
+```
+
+The code above creates an object using the density function, and then provides the class, data type, and structure of this object. The graph below is created by using the plot() function, and this code has intentionally not been printed in the output by using the echo: false option.
+
+```{r}
+#| echo: false
+plot(y,main="Sepal Length Density")
+```
